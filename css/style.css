@@ -1,0 +1,120 @@
+/*base css*/
+
+:root {
+  --darkGray: #292A2B;
+  --gray: #878787;
+  --lightGray: #E2E2E2;
+  --orange: #FF783E;
+  --lightOrange: #FDF3EE;
+  --white: #FFF;
+}
+
+html {
+  background-color: var(--white);
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 14px;
+  color: var(--darkGray);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.font-inter {
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+.font-sg {
+  font-family: 'Space Grotesk', Helvetica, sans-serif;
+}
+
+.font-semibold {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-sm {
+  gap: 8px;
+}
+
+.gap-md {
+  gap: 12px;
+}
+
+/*component css*/
+
+.navbar {
+  width: 238px;
+  height: 100vh;
+  padding: 32px 16px;
+  position: relative;
+  border-right: 1px solid var(--lightGray);
+}
+
+.nav-collapse {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  cursor: pointer;
+}
+
+.nav-logo {
+  margin-bottom: 64px;
+}
+
+.nav-item {
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  color: var(--orange);
+  border: 1px solid var(--lightOrange);
+}
+
+.nav-item.selected {
+  padding: 10px 6px 10px 16px;
+  color: var(--orange);
+  background-color: var(--lightOrange);
+}
+
+.nav-selected {
+  height: 24px;
+  width: 2px;
+  border-radius: 1px;
+  background-color: var(--orange);
+}
