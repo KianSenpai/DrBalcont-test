@@ -1,4 +1,7 @@
 /*base css*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk');
+@import url('https://fonts.googleapis.com/css?family=Inter');
 
 :root {
   --darkGray: #292A2B;
@@ -6,21 +9,31 @@
   --lightGray: #E2E2E2;
   --orange: #FF783E;
   --lightOrange: #FDF3EE;
+  --blue: #1F64EA;
   --white: #FFF;
+  --background: #F6F7FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 html {
-  background-color: var(--white);
+  background-color: var(--background);
   font-family: 'Poppins', Helvetica, sans-serif;
   font-size: 14px;
   color: var(--darkGray);
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  width: 100vw;
+a {
+  text-decoration: none;
+  color: var(--orange);
 }
 
 .font-inter {
@@ -32,11 +45,27 @@ body {
 }
 
 .font-semibold {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .font-bold {
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-light {
+  color: var(--gray);
+}
+
+.text-blue {
+  color: var(--blue);
 }
 
 .w-full {
@@ -64,6 +93,10 @@ body {
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .gap-sm {
   gap: 8px;
 }
@@ -72,14 +105,24 @@ body {
   gap: 12px;
 }
 
-/*component css*/
+.gap-lg {
+  gap: 18px;
+}
+
+.gap-xl {
+  gap: 36px;
+}
+
+/*navbar css*/
 
 .navbar {
   width: 238px;
+  min-width: 238px;
   height: 100vh;
   padding: 32px 16px;
   position: relative;
   border-right: 1px solid var(--lightGray);
+  background-color: var(--white);
 }
 
 .nav-collapse {
@@ -94,10 +137,11 @@ body {
 }
 
 .nav-item {
-  padding: 10px 14px;
+  padding: 12px 16px;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
+  box-sizing: border-box;
   border: 1px solid transparent;
 }
 
@@ -107,14 +151,55 @@ body {
 }
 
 .nav-item.selected {
-  padding: 10px 6px 10px 16px;
+  padding: 12px 6px 12px 16px;
   color: var(--orange);
   background-color: var(--lightOrange);
 }
 
 .nav-selected {
-  height: 24px;
+  height: 20px;
   width: 2px;
   border-radius: 1px;
   background-color: var(--orange);
+}
+
+/*top section css*/
+
+.top-section {
+  padding: 36px 32px 32px;
+  border-bottom: 1px solid var(--lightGray);
+  background-color: var(--white);
+}
+
+.button {
+  font-size: 14px;
+  border: 1px solid var(--lightGray);
+  padding: 14px 18px;
+  color: var(--gray);
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.button-sm {
+  font-size: 12px;
+  border: 1px solid var(--lightGray);
+  padding: 10px;
+  color: var(--gray);
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.button:hover, .button-sm:hover {
+  border: 1px solid var(--gray);
+  color: var(--darkGray);
+}
+
+.separator {
+  height: 20px;
+  width: 1px;
+  background-color: var(--gray);
 }
