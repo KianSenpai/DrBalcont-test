@@ -68,6 +68,10 @@ a {
   color: var(--blue);
 }
 
+.text-orange {
+  color: var(--orange);
+}
+
 .w-full {
   width: 100%;
 }
@@ -87,6 +91,18 @@ a {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: end;
 }
 
 .items-center {
@@ -113,6 +129,14 @@ a {
   gap: 36px;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 /*navbar css*/
 
 .navbar {
@@ -137,7 +161,7 @@ a {
 }
 
 .nav-item {
-  padding: 12px 16px;
+  padding: 12px 6px 12px 16px;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
@@ -151,7 +175,6 @@ a {
 }
 
 .nav-item.selected {
-  padding: 12px 6px 12px 16px;
   color: var(--orange);
   background-color: var(--lightOrange);
 }
@@ -174,18 +197,7 @@ a {
 .button {
   font-size: 14px;
   border: 1px solid var(--lightGray);
-  padding: 14px 18px;
-  color: var(--gray);
-  border-radius: 10px;
-  transition: all 0.3s;
-  background-color: var(--white);
-  cursor: pointer;
-}
-
-.button-sm {
-  font-size: 12px;
-  border: 1px solid var(--lightGray);
-  padding: 10px;
+  padding: 10px 18px;
   color: var(--gray);
   border-radius: 10px;
   transition: all 0.3s;
@@ -202,4 +214,157 @@ a {
   height: 20px;
   width: 1px;
   background-color: var(--gray);
+}
+
+/*bottom section */
+
+.bottom-section {
+  padding: 20px 32px 0;
+  height: 100%;
+}
+
+.card {
+  padding: 20px 30px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.button-sm {
+  font-size: 12px;
+  border: 1px solid var(--lightGray);
+  padding: 10px;
+  color: var(--gray);
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.card-bot {
+  background-color: var(--white);
+  border-radius: 10px 10px 0 0;
+}
+
+.card-bot .container {
+  padding: 20px 30px;
+}
+
+.tab-group {
+  margin: 29px 0;
+}
+
+.tab {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 16px 8px;
+  border: none;
+  border-bottom: 1px solid var(--lightGray);
+  background-color: transparent;
+  color: var(--gray);
+}
+
+.tab.selected {
+  border-bottom: 1px solid var(--orange);
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.progress {
+  margin: 0 24px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--lightGray);
+}
+
+.progress .complete {
+  width: 20%;
+  background-color: var(--orange);
+  height: 100%;
+}
+
+.steps {
+  top: -5px;
+  padding: 0 48px;
+}
+
+.step {
+  font-size: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--lightGray);
+  color: var(--darkGray);
+  border: 12px solid var(--white);
+}
+
+.step-name {
+  font-size: 12px;
+  top: 50px;
+  text-align: center;
+  width: 80px;
+}
+
+.pic-container {
+  margin-top: 100px;
+}
+
+.pic {
+  width: 119px;
+  height: 119px;
+  border-radius: 5px;
+}
+
+.pic.input {
+  border: 1px dashed var(--orange);
+}
+
+.pic.pics {
+  background-color: var(--lightGray);
+}
+
+.x-box {
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.x-box:hover {
+  opacity: 1;
+}
+
+.camera-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.button-box {
+  padding: 20px 30px;
+  background-color: var(--white);
+  border-top: 1px solid var(--lightGray);
+}
+
+.button-primary {
+  border: none;
+  font-size: 14px;
+  padding: 14px 19px;
+  color: var(--white);
+  border-radius: 10px;
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.separator-lg {
+  height: 30px;
+  width: 1px;
+  background-color: var(--lightGray);
+}
+
+.btn-box {
+  cursor: pointer;
+  font-size: 16px;
 }
